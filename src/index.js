@@ -1,17 +1,36 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import App from './components/App';
+import TodoList from './components/TodoList';
+import TodoApp from './context/TodoApp';
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <App/>,
+    children: [
+      {
+        index: true,
+        element: <TodoList show={'all'}/>
+      },
+      {
+        path: 'active',
+        element: <TodoList show={'active'}/>
+      },
+      {
+        path: 'completed',
+        element: <TodoList show={'completed'}/>
+      }
+    ]
+  }
+])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <TodoApp>
+      <RouterProvider router={router}></RouterProvider>
+    </TodoApp>
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

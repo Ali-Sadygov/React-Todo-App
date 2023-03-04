@@ -1,0 +1,156 @@
+body {
+    background-color: #ECECEC;
+}
+.title {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.todoApp {
+    padding: 20px;
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: #377E7F;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 18px 0px;
+}
+.inp, .btn {
+    padding: 7px 15px;
+    font-size: 1.4em;
+}
+.inpp {
+    padding: 7px 15px;
+    font-size: 1.4em;
+    flex: 7;
+    border-radius: 5px;
+    border: solid 1px #b6b4b4;
+    box-sizing: border-box;
+}
+.inp {
+    width: 70%;
+    border-radius: 5px;
+    margin-right: 5px;
+    border: solid 1px #b6b4b4;
+}
+.btn {
+    width: 15%;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: #6AD37A;
+    border: solid 1px #6AD37A;
+}
+.todoList {
+    height: 8vh;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 5px;
+    color: white;
+    align-items: center;
+    border-radius: 7px;
+    background-color: #332F4C;
+    width: 90%;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.todoList2 {
+    height: 8vh;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 5px;
+    color: white;
+    align-items: center;
+    border-radius: 7px;
+    background-color: #332F4C;
+    width: 90%;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+.complete {
+    background-color: #6AD37A;
+    border: solid #6AD37A 1px;
+    height: 4vh;
+    border-radius: 7px;
+    margin: 3px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.delete {
+    background-color: rgb(202,49,66);
+    border: solid rgb(202,49,66) 1px;
+    border-radius: 7px;
+    margin:3px;
+    font-weight: bold;
+    color: white;
+    width: 10vh;
+    height: 4vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.edit {
+    background-color: #6AD37A;
+    width: 10vh;
+    height: 4vh;
+    margin:3px;
+    border: solid 1px #6AD37A;
+    border-radius: 7px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.bottom {
+    background-color: #6AD37A;
+    border: solid #6AD37A 1px;
+    border-radius: 3px;
+}
+
+.todoAppControls {
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2em;
+}
+.child {
+    width: 50%;
+}
+.a {
+    text-decoration: none;
+    color: black;
+}
+.div {
+    flex: 5;
+    box-sizing: border-box;
+}
+.save, .cancel{
+    border: solid black 1px;
+    width: 47%;
+    margin-left: 5px;
+    height: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+}
+.save {
+    border: #6AD37A solid 1px;
+    background-color: #6AD37A;
+    color: white;
+}
+.cancel {
+    background-color: rgb(202,49,66);
+    border: solid 1px rgb(202,49,66);
+    
+}
